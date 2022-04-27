@@ -54,11 +54,39 @@ propiedades del fichero o el directorio:
         //para saber la ruta absoluta del fichero
         System.out.println("La ruta absoluta del fichero es "+ file.getAbsolutePath());
         //para saber la ruta absoluta asociado al fichero
+        // Debe de estar dentro de un try catch
         try{
         System.out.println("La ruta absoluta del fichero es "+ file.getCanonicalFile());
         }catch (IOException ex){
         System.out.println("Error");
-    }
+        }
+        // Devuelve la ruta con la que se creó el objeto, puede ser relativa o no
+           System.out.println(file.getPath());
+
+        //saber si la ruta es absoluta
+        System.out.println("La ruta es absoluta? "+ file.isAbsolute());
+
+        // Para saber si es un directorio válido
+        System.out.println("Pertenece a un directorio valido? "+file.isDirectory());
+
+        // Para saber cuando fue modificado la ultima vez
+        System.out.println("Cuando fue modificado la ultima vez? "+file.lastModified());
+
+        // devuelve el tamaño en bytes del fichero, devuelve 0 si no existe
+        System.out.println("Que tamaño tiene? "+file.length());
+
+        // Para saber si es un directorio válido
+        //System.out.println("Pertenece a un drectorio valido? "+file.isDirectory());
+
+        // Para saber si es un directorio válido
+        //System.out.println("Pertenece a un drectorio valido? "+file.isDirectory());
+
+        // Para saber si es un directorio válido
+       // System.out.println("Pertenece a un drectorio valido? "+file.isDirectory());
+
+        // Para saber si es un directorio válido
+       // System.out.println("Pertenece a un drectorio valido? "+file.isDirectory());
+
     }
 
 }

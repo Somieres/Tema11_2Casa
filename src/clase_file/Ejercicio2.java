@@ -16,7 +16,7 @@ public class Ejercicio2 {
         fichero=sc.nextLine();
 
         file=new File(fichero);
-        listaFicheros= file.list();
+       // listaFicheros = file.list();
 
         for (int i=0; i<listaFicheros.length;i++){
             System.out.println(listaFicheros[i]);
