@@ -57,7 +57,7 @@ public class EjemploArchivoBinario_Pag37 {
             System.out.println("Error ");
         }catch (FileNotFoundException fileNotFoundException){
             System.out.println("donde lees?");
-        }c
+        }
 
     }
 
