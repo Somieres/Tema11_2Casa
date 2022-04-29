@@ -17,9 +17,11 @@ public class Uso_StringBuffer {
             for (int i = 0; i <listaPerros.size() ; i++) {
                 raf.write(listaPerros.get(i).getId());
                 sb=new StringBuffer(listaPerros.get(i).getNombre());
+                raf.writeChars(sb.toString());
                 sb.setLength(15);
                 raf.writeBoolean(listaPerros.get(i).isConChapa());
                 sb=new StringBuffer(listaPerros.get(i).getColor());
+                raf.writeChars(sb.toString());
                 sb.setLength(15);
                 raf.write(listaPerros.get(i).getEdad());
                 sb=new StringBuffer(listaPerros.get(i).getRaza().name());
