@@ -10,10 +10,6 @@ public class Perro {
     private int edad;
     private Raza raza;
 
-    public Perro(){
-
-    }
-
     public Perro(int id, String nombre, boolean conChapa, String color, int edad, Raza raza) {
         this.id = id;
         this.nombre = nombre;
@@ -31,8 +27,12 @@ public class Perro {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombre(){
+
+        StringBuffer sb=new StringBuffer();
+        sb.append(this.nombre);
+        sb.setLength(15);
+        return sb.toString();
     }
 
     public void setNombre(String nombre) {
@@ -48,7 +48,10 @@ public class Perro {
     }
 
     public String getColor() {
-        return color;
+        StringBuffer sb=new StringBuffer();
+        sb.append(this.color);
+        sb.setLength(15);
+        return sb.toString();
     }
 
     public void setColor(String color) {
